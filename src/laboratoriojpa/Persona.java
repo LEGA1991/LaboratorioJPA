@@ -4,12 +4,16 @@
  * and open the template in the editor.
  */
 package laboratoriojpa;
+import java.io.Serializable;
+import javax.persistence.*;
 
+@Entity
 /**
  *
  * @author est1534809
  */
-public class Persona {
+public class Persona implements Serializable {
+    @Id
     private String nombre;
     private String apellido;
     private boolean conectado;
